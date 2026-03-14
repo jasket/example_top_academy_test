@@ -1,0 +1,195 @@
+<html>
+<style>
+    /* Общий фон страницы */
+    body {
+        background-color: #0d0d0d;
+        /* Глубокий черный */
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNZdLqmVQ5E1A_9bVA6IaGEdZtdnCgR_al6A&s');
+        background-size: contain;
+        color: #e0e0e0;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 40px;
+    }
+
+    .posts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        background-color: #1a1a1a;
+        /* Темный фон в стиле игры */
+    }
+
+    .post-card {
+        border: 2px solid #333;
+        border-radius: 8px;
+        background: #2c2c2c;
+        color: white;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .post-image {
+        height: 180px;
+        /* Изображение будет уменьшено, чтобы влезть целиком */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 10px;
+    }
+
+    /* Ссылки на изображения персонажей */
+    .freddy {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjKDNPqNYZxC01D_MoMOA5Z1SnwfxysvF6zA&s);
+    }
+
+    .bonnie {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJuNd3J_JdcMEw5QLpGAMP6pdWE8BTx3fwow&s);
+    }
+
+    .chica {
+        background-image: url(https://zvetnoe.ru/upload/resize_cache/catalog/w750h1000/99e/99ee64f11d04ce52f5a73de204e696eb.jpg);
+    }
+
+    .post-content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .post-content h3 {
+        color: #ff4d4d;
+        /* Красный акцент для заголовков */
+    }
+
+    /* Стиль меню с тенями и формой */
+    .fnaf-menu {
+        background: rgba(40, 40, 40, 0.8);
+        backdrop-filter: blur(10px);
+        /* Эффект матового стекла */
+        border: 1px solid #444;
+        border-radius: 50px;
+        /* Скругленная форма */
+        padding: 10px 30px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9),
+            inset 0 0 15px rgba(255, 255, 255, 0.05);
+        margin-bottom: 50px;
+    }
+
+    .fnaf-menu ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .menu-item {
+        text-decoration: none;
+        color: #bbb;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.4s;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Эффект наведения (неоновое свечение) */
+    .menu-item:hover {
+        color: #ff4d4d;
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #8b0000;
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+    <!-- Навигационное меню -->
+    <nav class="fnaf-menu">
+        <ul>
+            <li><a href="./index.html" class="menu-item">Главная</a></li>
+            <li><a href="./animatroniks.html" class="menu-item">Аниматроники</a></li>
+            <li><a href="./video.html" class="menu-item">Видео</a></li>
+            <li><a href="#" class="menu-item">??</a></li>
+        </ul>
+    </nav>
+
+    <div class="posts-grid">
+        <!-- Фредди -->
+        <article class="post-card">
+            <div class="post-image freddy"></div>
+            <div class="post-content">
+                <h3>Freddy Fazbear</h3>
+                <p>Лидер группы и главный кошмар охранника. Активируется в поздние ночи, скрываясь в тени и смеясь,
+                    прежде чем напасть из темноты.</p>
+            </div>
+        </article>
+
+        <!-- Бонни -->
+        <article class="post-card">
+            <div class="post-image bonnie"></div>
+            <div class="post-content">
+                <h3>Bonnie the Bunny</h3>
+                <p>Самый активный аниматроник. Всегда атакует с левой стороны и обожает появляться в дверном проеме,
+                    когда вы меньше всего этого ждете.</p>
+            </div>
+        </article>
+
+        <!-- Чика -->
+        <article class="post-card">
+            <div class="post-image chica"></div>
+            <div class="post-content">
+                <h3>Chica the Chicken</h3>
+                <p>Её место — правая сторона. О её приближении можно узнать по грохоту кастрюль на кухне. Не забывайте
+                    проверять окно!</p>
+            </div>
+        </article>
+    </div>
+    <article class="post-card">
+        <div class="post-image freddy"></div>
+        <div class="post-content">
+            <h3>Freddy Fazbear</h3>
+            <p>Главный аниматроник пиццерии.</p>
+
+            <!-- Блок комментариев -->
+            <div class="comments-section">
+                <h4>Комментарии (10)</h4>
+                <ul class="comments-list">
+                    <li><strong>Admin_Night:</strong> Не забывай закрывать правую дверь!</li>
+                    <li><strong>LegoFan:</strong> А будет такая фигурка в реальности?</li>
+                    <li><strong>Mike_S:</strong> Снова эта музыка из шкатулки...</li>
+                    <li><strong>Pro_Gamer:</strong> Прошел 4-ю ночь только что!</li>
+                    <li><strong>Bonnie_Lover:</strong> Фредди страшнее, чем Бонни.</li>
+                    <li><strong>Pizza_Guy:</strong> Кто-то заказывал пиццу?</li>
+                    <li><strong>User777:</strong> Почему он смеется в темноте?</li>
+                    <li><strong>Toy_Collector:</strong> Жду набор с офисом охранника.</li>
+                    <li><strong>Horror_Fan:</strong> Лучший дизайн персонажа 2014 года.</li>
+                    <li><strong>Scott_C:</strong> Спасибо за игру!</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <!-- ПОСТ 4: FNAF 1 -->
+    <article class="post-card">
+        <div class="post-image fnaf-classic"></div>
+        <div class="post-content">
+            <h3>FNAF 1: Night Shift</h3>
+            <p>Добро пожаловать в пиццерию Freddy Fazbear's Pizza, где оживают ночные кошмары.</p>
+
+            <div class="comments-section">
+                <h4>Комментарии (10):</h4>
+                <ul class="comments-list">
+                    <li><strong>Bonnie_Fan:</strong> Бонни самый быстрый, он уже у левой двери!</li>
+                    <li><strong>PizzaTime:</strong> Обожаю, как Чика гремит посудой на кухне.</li>
+                    <li><strong>Security_Guy:</strong> Энергия на нуле, а еще только 4 часа утра...</li>
+                    <li><strong>Cupcake_Lover:</strong> Кекс Чики выглядит подозрительно мило.</li>
+                    <li><strong>Guitar_Hero:</strong> Почему у Бонни нет бровей? Это пугает еще сильнее.</li>
+                    <li><strong>Kitchen_Ghost:</strong> Чика, хватит жрать пиццу, иди пугать охранника!</li>
+                    <li><strong>Let_s_Eat:</strong> Слюнявчик Чики — это легендарно.</li>
+                    <li><strong>Rabbit_Hunter:</strong> Бонни всегда первым уходит со сцены, бесит!</li>
+                    <li><strong>Foxy_Hidden:</strong> Пока вы следите за этими двоими, я бегу из бухты.</li>
+                    <li><strong>Golden_Fan:</strong> IT'S ME.</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>
