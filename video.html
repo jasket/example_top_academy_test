@@ -1,0 +1,211 @@
+<html>
+<style>
+    /* Общий фон страницы */
+    body {
+        background-color: #0d0d0d;
+        /* Глубокий черный */
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNZdLqmVQ5E1A_9bVA6IaGEdZtdnCgR_al6A&s');
+        background-size: contain;
+        color: #e0e0e0;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 40px;
+    }
+
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #f0f2f5;
+        color: #1c1e21;
+        margin: 0;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .video-container {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    /* Стиль карточки */
+    .video-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        margin-bottom: 40px;
+        overflow: hidden;
+        transition: transform 0.2s ease;
+    }
+
+    .video-card:hover {
+        transform: translateY(-3px);
+    }
+
+    /* Адаптивный плеер */
+    .iframe-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        height: 0;
+    }
+
+    .iframe-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* Текстовая область */
+    .video-info {
+        padding: 20px;
+    }
+
+    .video-title {
+        margin: 0 0 10px 0;
+        font-size: 1.4rem;
+        color: #d32f2f;
+    }
+
+    .video-desc {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #4b4f56;
+        margin-bottom: 15px;
+    }
+
+    .btn-link {
+        display: inline-block;
+        padding: 10px 18px;
+        background-color: #ff0000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .btn-link:hover {
+        background-color: #cc0000;
+    }
+
+    /* Стиль меню с тенями и формой */
+    .fnaf-menu {
+        background: rgba(40, 40, 40, 0.8);
+        backdrop-filter: blur(10px);
+        /* Эффект матового стекла */
+        border: 1px solid #444;
+        border-radius: 50px;
+        /* Скругленная форма */
+        padding: 10px 30px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9),
+            inset 0 0 15px rgba(255, 255, 255, 0.05);
+        margin-bottom: 50px;
+    }
+
+    .fnaf-menu ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .menu-item {
+        text-decoration: none;
+        color: #bbb;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.4s;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Эффект наведения (неоновое свечение) */
+    .menu-item:hover {
+        color: #ff4d4d;
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #8b0000;
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+    <!-- Навигационное меню -->
+    <nav class="fnaf-menu">
+        <ul>
+            <li><a href="./index.html" class="menu-item">Главная</a></li>
+            <li><a href="./animatroniks.html" class="menu-item">Аниматроники</a></li>
+            <li><a href="./video.html" class="menu-item">Видео</a></li>
+            <li><a href="#" class="menu-item">??</a></li>
+        </ul>
+    </nav>
+
+    <!-- Заголовок страницы -->
+
+
+    <h1>Моя подборка видео</h1>
+
+    <div class="video-container">
+
+        <!-- Видео 1 (с привязкой ко времени) -->
+        <div class="video-card">
+            <div class="iframe-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EYjlegj0AJg?si=3sW7ynXTJWhQAGUO"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Первое видео (с 5:01)</h2>
+                <p class="video-desc">Это видео настроено так, чтобы воспроизведение начиналось сразу с 301-й секунды.
+                    Отлично подходит для демонстрации конкретного момента.</p>
+                <a href="https://www.youtube.com/watch?v=EYjlegj0AJg&t=301s" target="_blank" class="btn-link">Открыть на
+                    YouTube</a>
+            </div>
+        </div>
+
+        <!-- Видео 2 -->
+        <div class="video-card">
+            <div class="iframe-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EYjlegj0AJg?si=Fd-cHEJj2Y7WtGpe"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Второе видео</h2>
+                <p class="video-desc">Интересный контент, который дополняет вашу коллекцию. Вы можете заменить этот
+                    текст на реальное описание ролика.</p>
+                <a href="https://www.youtube.com/watch?v=T_CvOhzBkRw" target="_blank" class="btn-link">Открыть на
+                    YouTube</a>
+            </div>
+        </div>
+
+        <!-- Видео 3 -->
+        <div class="video-card">
+            <div class="iframe-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BAsPGUh9rPc?si=qtMVOqRHFtVTJnVj"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title">Третье видео</h2>
+                <p class="video-desc">Заключительное видео в списке. Все карточки имеют одинаковый стиль для визуальной
+                    целостности страницы.</p>
+                <a href="https://www.youtube.com/watch?v=BAsPGUh9rPc" target="_blank" class="btn-link">Открыть на
+                    YouTube</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

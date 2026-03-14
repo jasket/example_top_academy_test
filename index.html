@@ -1,0 +1,131 @@
+<html>
+<style>
+    /* Общий фон страницы */
+    body {
+        background-color: #0d0d0d;
+        /* Глубокий черный */
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNZdLqmVQ5E1A_9bVA6IaGEdZtdnCgR_al6A&s');
+        background-size: contain;
+        color: #e0e0e0;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 40px;
+    }
+
+    /* Стилизация главного заголовка */
+    #movie-title {
+        color: #ff0000;
+        /* Кроваво-красный */
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: 3px 3px 10px #000;
+        text-transform: uppercase;
+    }
+
+    /* Оформление основного текста */
+    .movie-description {
+        background-color: rgba(50, 50, 50, 0.7);
+        padding: 20px;
+        border: 2px solid #555;
+        border-radius: 8px;
+        line-height: 1.6;
+    }
+
+    /* Стилизация элементов списка (без использования <ul> и <li>) */
+    .list-item {
+        background-color: #1a1a1a;
+        margin: 10px 0;
+        padding: 10px;
+        border-left: 4px solid #f1c40f;
+        /* Желтый акцент (цвет глаз аниматроника) */
+    }
+
+    /* Слоган с эффектом мерцания */
+    #horror-slogan {
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-top: 50px;
+        letter-spacing: 3px;
+        animation: blink 2s infinite;
+    }
+
+
+
+    .divider {
+        border: 1px solid #333;
+        margin: 30px 0;
+    }
+
+    /* Стиль меню с тенями и формой */
+    .fnaf-menu {
+        background: rgba(40, 40, 40, 0.8);
+        backdrop-filter: blur(10px);
+        /* Эффект матового стекла */
+        border: 1px solid #444;
+        border-radius: 50px;
+        /* Скругленная форма */
+        padding: 10px 30px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9),
+            inset 0 0 15px rgba(255, 255, 255, 0.05);
+        margin-bottom: 50px;
+    }
+
+    .fnaf-menu ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .menu-item {
+        text-decoration: none;
+        color: #bbb;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.4s;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Эффект наведения (неоновое свечение) */
+    .menu-item:hover {
+        color: #ff4d4d;
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #8b0000;
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+    <!-- Навигационное меню -->
+    <nav class="fnaf-menu">
+        <ul>
+            <li><a href="./index.html" class="menu-item">Главная</a></li>
+            <li><a href="./animatroniks.html" class="menu-item">Аниматроники</a></li>
+            <li><a href="./video.html" class="menu-item">Видео</a></li>
+            <li><a href="#" class="menu-item">??</a></li>
+        </ul>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <h1 id="movie-title">Пять ночей у Фредди (FNaF)</h1>
+
+    <!-- Описание сюжета -->
+    <p class="movie-description">Майк Шмидт устраивается ночным охранником в заброшенную пиццерию Freddy Fazbear’s
+        Pizza. Однако работа оказывается смертельно опасной, когда огромные аниматроники оживают ночью.</p>
+
+    <!-- Разделительная линия -->
+    <hr class="divider">
+
+    <!-- Блок с главными героями -->
+    <h2 class="section-subtitle">Главные герои и аниматроники</h2>
+    <p class="list-item">Майк Шмидт — охранник с тяжелым прошлым.</p>
+    <p class="list-item">Фредди Фазбер — лидер группы аниматроников.</p>
+    <p class="list-item">Бонни и Чика — гитарист и бэк-вокалистка команды.</p>
+    <p class="list-item">Фокси — лис-пират из «Пиратской бухты».</p>
+
+    <!-- Цитата или слоган -->
+    <p id="horror-slogan">СМОЖЕШЬ ЛИ ТЫ ВЫЖИТЬ ПЯТЬ НОЧЕЙ?</p>
+</body>
+
+</html>
